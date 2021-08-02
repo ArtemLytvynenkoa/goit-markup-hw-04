@@ -193,6 +193,8 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
 .icon-envelope,
@@ -205,10 +207,7 @@ img {
 /* Hero content */
 
 .hero {
-    max-width: 1600px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--hero-background-color);
     background-image: 
         linear-gradient(
@@ -405,11 +404,12 @@ img {
 }
 
 .team-section .social-link {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
 
     color: var(--main-icons-color);
 }
@@ -436,12 +436,14 @@ img {
 }
 
 .link.customer-logos {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--main-icons-color);
     border-radius: 4px;
-    padding: 16px 32px;
+    
     color: var(--main-icons-color);
 }
 
@@ -525,10 +527,11 @@ line-height: 1.71;
 }
 
 .footer .social-logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
     border-radius: 50%;
 
     color: var(--main-background-color);
